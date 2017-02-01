@@ -29,6 +29,7 @@ Implemented methods
 TODO:
 -----
  - request method and status codes in readme
+ - requirements
  - coordinates
  - make package
  - pip
