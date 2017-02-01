@@ -6,7 +6,22 @@ This library is implementation of [Aqicn JSON API](http://aqicn.org/json-api/doc
 
 To use it, you first need to [create API token](http://aqicn.org/data-platform/token/).
 
-Usage:
+Installation
+------------
+
+With pip:
+```bash
+
+$ pip install aqicn
+```
+Manual:
+
+```bash
+$ pip install -e git+https://github.com/miczal/aqicn-sdk#egg=aqicn
+```
+
+Usage
+-----
 ```python
 import aqicn
 
