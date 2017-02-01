@@ -6,7 +6,7 @@ This library is implementation of [Aqicn JSON API](http://aqicn.org/json-api/doc
 
 To use it, you first need to [create API token](http://aqicn.org/data-platform/token/).
 
-Usage (TODO):
+Usage:
 ```python
 import aqicn
 
@@ -30,5 +30,3 @@ TODO:
 -----
  - request method and status codes in readme
  - coordinates
- - make package
- - pip

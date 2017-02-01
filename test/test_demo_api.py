@@ -1,4 +1,4 @@
-from aqicn.aqicn import AqicnApi, Coordinate
+from aqicn import AqicnApi, Coordinate
 
 import pytest
 
