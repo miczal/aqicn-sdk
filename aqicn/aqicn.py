@@ -24,7 +24,7 @@ class AqicnApi:
 
     _protocol = "https"
     _domain = "api.waqi.info"
-    _header = {'user-agent': 'aqicn-api/0.1'}
+    _header = {'user-agent': 'aqicn-sdk/0.1'}
     _expected_response_status = 200
 
     def __init__(self, secret, proxy=None):
