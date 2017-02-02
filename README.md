@@ -1,10 +1,20 @@
 aqicn Python SDK
 ================
-
+[![PyPI version](https://badge.fury.io/py/aqicn.svg)](https://badge.fury.io/py/aqicn)
 
 This library is implementation of [Aqicn JSON API](http://aqicn.org/json-api/doc/).
 
 To use it, you first need to [create API token](http://aqicn.org/data-platform/token/).
+
+Usage
+-----
+```python
+import aqicn
+
+api = aqicn.AqicnApi(secret="YOUR_KEY")
+
+ip_based_data = api.get_feed()
+```
 
 Installation
 ------------
@@ -20,15 +30,6 @@ Manual:
 $ pip install -e git+https://github.com/miczal/aqicn-sdk#egg=aqicn
 ```
 
-Usage
------
-```python
-import aqicn
-
-api = aqicn.AqicnApi(secret="YOUR_KEY")
-
-ip_based_data = api.get_feed()
-```
 
 Implemented methods
 -------------------
