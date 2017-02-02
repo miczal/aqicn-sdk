@@ -4,10 +4,11 @@ aqicn Python SDK
 
 This library is implementation of [Aqicn JSON API](http://aqicn.org/json-api/doc/).
 
-To use it, you first need to [create API token](http://aqicn.org/data-platform/token/).
-
 Usage
 -----
+
+You first need to [create API token](http://aqicn.org/data-platform/token/).
+
 ```python
 import aqicn
 
@@ -42,7 +43,15 @@ Implemented methods
 | stations on the map (map query)        | get_stations_in_area |
 | search by name                         | search               |
 
+Utility methods
+---------------
+
+- stations_by_name
+- update stations
+
 TODO:
 -----
  - request method and status codes in readme
  - coordinates
+ - utils
+ - cities -> stations
