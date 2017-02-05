@@ -80,19 +80,19 @@ class AqicnApi:
     # All API methods according to:
     # http://aqicn.org/json-api/doc/
 
-    def get_feed(self, *city_name_or_station_id):
+    def get_feed(self, *station_name_or_station_id):
         """
-        IP based feed if no arguments, city or station (id) based if 1 argument present.
+        IP based feed if no arguments, station or station (id) based if 1 argument present.
 
         Args:
-            city_name_or_station_id (str): city name in English or station id
+            station_name_or_station_id (str): station name or station id
 
         Throws:
             ValueError if more than 1 argument given
-            AqicnApiError("Unknown station") if wrong id / city name given.
+            AqicnApiError("Unknown station") if wrong id / station name given.
         """
-        if len(city_name_or_station_id) > 1: raise ValueError("Only 0 or 1 arguments possible")
-        return self.json_request("feed/" + ("".join(city_name_or_station_id) + "/" if city_name_or_station_id else "here/"))
+        if len(station_name_or_station_id) > 1: raise ValueError("Only 0 or 1 arguments possible")
+        return self.json_request("feed/" + ("".join(station_name_or_station_id) + "/" if station_name_or_station_id else "here/"))
 
     def get_location_feed(self, coord):
         """
