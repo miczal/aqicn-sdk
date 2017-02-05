@@ -14,9 +14,16 @@ You first need to [create API token](http://aqicn.org/data-platform/token/).
 ```python
 import aqicn
 
+# API
+
 api = aqicn.AqicnApi(secret="YOUR_KEY")
 
 ip_based_data = api.get_feed()
+
+# Utils
+
+aqicn.utils.scrap_data_from_website()
+
 ```
 
 Installation
@@ -39,11 +46,11 @@ Implemented API methods
 
 | API                                    | SDK                  |
 | -------------------------------------- | -------------------- |
-| `city/station feed`                      | get_feed             |
-| `geo-localized feed` (IP based)          | get_feed             |
-| `stations on the map` (geo feed)         | get_location_feed    |
-| `stations on the map` (map query)        | get_stations_in_area |
-| `search by name`                         | search               |
+| `city/station feed`                      | `get_feed`             |
+| `geo-localized feed` (IP based)          | `get_feed(station_name_or_station_id)`             |
+| `stations on the map` (geo feed)         | `get_location_feed(coord)`    |
+| `stations on the map` (map query)        | `get_stations_in_area(lower_left, upper_right)` |
+| `search by name`                         | `search(keyword)`               |
 
 Utility methods
 ---------------
