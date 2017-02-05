@@ -8,4 +8,8 @@ setup(name='aqicn',
       author='miczal',
       author_email='mpierscinski@gmail.com',
       license='MIT',
+      install_requires=[
+          'requests',
+          'pytest',
+      ],
       keywords = ['pollution', 'aqicn', 'API', 'SDK'])
