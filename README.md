@@ -4,6 +4,8 @@ aqicn Python SDK
 
 This library is implementation of [Aqicn JSON API](http://aqicn.org/json-api/doc/).
 
+It also includes utility methods for scraping [aqicn](http://aqicn.org/) website (See: **Utility methods**).
+
 Usage
 -----
 
@@ -32,8 +34,8 @@ $ pip install -e git+https://github.com/miczal/aqicn-sdk#egg=aqicn
 ```
 
 
-Implemented methods
--------------------
+Implemented API methods
+-----------------------
 
 | API                                    | SDK                  |
 | -------------------------------------- | -------------------- |
